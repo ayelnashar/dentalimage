@@ -1,0 +1,15 @@
+# Environment A: Python 3.9.13
+torch==2.2.2
+torchvision==0.17.2
+numpy<2
+scikit-learn
+matplotlib
+pillow
+tqdm
+huggingface_hub
+open_clip_torch
+timm
+ml_collections
+reportlab
+jupyter
+ipykernel

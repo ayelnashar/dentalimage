@@ -1,0 +1,17 @@
+# Environment B: Python 3.12.8 (DINOv3-L)
+torch==2.12.0
+transformers==5.12.1
+# install the torchvision release that matches torch 2.12.0
+torchvision
+numpy
+scikit-learn
+matplotlib
+pillow
+tqdm
+huggingface_hub
+open_clip_torch
+timm
+ml_collections
+reportlab
+jupyter
+ipykernel
