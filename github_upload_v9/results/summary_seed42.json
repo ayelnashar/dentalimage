@@ -1,0 +1,306 @@
+{
+  "timestamp": "2026-06-18T10:02:59",
+  "device": "mps",
+  "seed": 42,
+  "crop": 224,
+  "n_teeth": 3456,
+  "class_names": [
+    "Impacted",
+    "Caries",
+    "Periapical Lesion",
+    "Deep Caries"
+  ],
+  "positives_per_class": {
+    "Impacted": 604,
+    "Caries": 2186,
+    "Periapical Lesion": 158,
+    "Deep Caries": 575
+  },
+  "split": {
+    "train": 2416,
+    "val": 511,
+    "test": 529
+  },
+  "direction1_zoo": {
+    "densenet121": {
+      "best_val_macro_auc": 0.9122,
+      "test_macro_auc": 0.9272,
+      "test_per_condition_auc": {
+        "Impacted": 0.9944,
+        "Caries": 0.9193,
+        "Periapical Lesion": 0.9611,
+        "Deep Caries": 0.8341
+      },
+      "test_ece": {
+        "Impacted": 0.0201,
+        "Caries": 0.0935,
+        "Periapical Lesion": 0.0396,
+        "Deep Caries": 0.0787
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.8151745717257064,
+          "val_macro_auc": 0.8308469183173504
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.5064617616451339,
+          "val_macro_auc": 0.8720171086984433
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3690211052531438,
+          "val_macro_auc": 0.8840939172691811
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.28066034467015044,
+          "val_macro_auc": 0.9000134401044866
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.19307057549621884,
+          "val_macro_auc": 0.8928332650272061
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.1485980609000124,
+          "val_macro_auc": 0.9023260752914625
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.10472310418324755,
+          "val_macro_auc": 0.8959989630823444
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.07715872709719551,
+          "val_macro_auc": 0.9120000473593086
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.06332387923207504,
+          "val_macro_auc": 0.9012290988810936
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.08787049461674216,
+          "val_macro_auc": 0.902787960583411
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.05896042408236605,
+          "val_macro_auc": 0.9122365378892511
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.06562745874587274,
+          "val_macro_auc": 0.8938761805690072
+        }
+      ]
+    },
+    "efficientnet_v2_s": {
+      "best_val_macro_auc": 0.9095,
+      "test_macro_auc": 0.9307,
+      "test_per_condition_auc": {
+        "Impacted": 0.9945,
+        "Caries": 0.9297,
+        "Periapical Lesion": 0.9374,
+        "Deep Caries": 0.861
+      },
+      "test_ece": {
+        "Impacted": 0.0195,
+        "Caries": 0.0938,
+        "Periapical Lesion": 0.0412,
+        "Deep Caries": 0.0839
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9407255199571319,
+          "val_macro_auc": 0.8026847086147053
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6373700594270466,
+          "val_macro_auc": 0.8481260116313484
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4835627840844211,
+          "val_macro_auc": 0.8696944874069942
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.33163498391378793,
+          "val_macro_auc": 0.8880752373638432
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.23078938006170538,
+          "val_macro_auc": 0.8945367496414067
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.18503954059240835,
+          "val_macro_auc": 0.8949633707630046
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.14526025043023344,
+          "val_macro_auc": 0.9023957071062056
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.10073660644671775,
+          "val_macro_auc": 0.8835226757381749
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.10504205749425667,
+          "val_macro_auc": 0.8987505305208136
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.09052178480767256,
+          "val_macro_auc": 0.8999998293807109
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.06927706253104257,
+          "val_macro_auc": 0.8982907345468464
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.07809207122156162,
+          "val_macro_auc": 0.9095314447376126
+        }
+      ]
+    },
+    "resnet50": {
+      "best_val_macro_auc": 0.9083,
+      "test_macro_auc": 0.9088,
+      "test_per_condition_auc": {
+        "Impacted": 0.9935,
+        "Caries": 0.9067,
+        "Periapical Lesion": 0.9069,
+        "Deep Caries": 0.828
+      },
+      "test_ece": {
+        "Impacted": 0.0178,
+        "Caries": 0.0806,
+        "Periapical Lesion": 0.0595,
+        "Deep Caries": 0.1023
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9236301104754012,
+          "val_macro_auc": 0.8013883859729906
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6311196294051922,
+          "val_macro_auc": 0.8478171256473839
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.4541351842564463,
+          "val_macro_auc": 0.8656161865075179
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3556722526913447,
+          "val_macro_auc": 0.8712366498322628
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.24149394439940422,
+          "val_macro_auc": 0.885626129188673
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.1902538461993072,
+          "val_macro_auc": 0.8974600001203116
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.12191833454548129,
+          "val_macro_auc": 0.8863691913104194
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.12527589351925628,
+          "val_macro_auc": 0.886837957279363
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.10140718694850309,
+          "val_macro_auc": 0.9082632416991887
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.07652289058939116,
+          "val_macro_auc": 0.8913437119899708
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.061507617043244915,
+          "val_macro_auc": 0.9036032664604561
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.0511076356352165,
+          "val_macro_auc": 0.9071995655282127
+        }
+      ]
+    }
+  },
+  "direction1_best_model": "efficientnet_v2_s",
+  "direction2_ablation": {
+    "plain": {
+      "val_macro_auc": 0.9083,
+      "test_macro_auc": 0.9348,
+      "test_per_condition_auc": {
+        "Impacted": 0.995,
+        "Caries": 0.9321,
+        "Periapical Lesion": 0.944,
+        "Deep Caries": 0.8684
+      }
+    },
+    "independent": {
+      "val_macro_auc": 0.9008,
+      "test_macro_auc": 0.928,
+      "test_per_condition_auc": {
+        "Impacted": 0.9952,
+        "Caries": 0.9305,
+        "Periapical Lesion": 0.9232,
+        "Deep Caries": 0.8632
+      }
+    },
+    "gated_mlp": {
+      "val_macro_auc": 0.8985,
+      "test_macro_auc": 0.9268,
+      "test_per_condition_auc": {
+        "Impacted": 0.9948,
+        "Caries": 0.9327,
+        "Periapical Lesion": 0.9144,
+        "Deep Caries": 0.8654
+      }
+    }
+  },
+  "direction2_safety": {
+    "eps": 0.3,
+    "ood_thresh": 0.12,
+    "refused_frac": 0.0,
+    "acc_all": 0.8663,
+    "acc_kept": 0.8663
+  },
+  "notes": {
+    "unit": "tooth (grouped by image,quadrant,position)",
+    "targets": "multi-label over 4 DENTEX diagnoses",
+    "split": "grouped by image \u2014 no leakage",
+    "caveats": "small data (705 imgs); periapical lesion rarest/noisiest; gated MLP gains modest with only 4 classes"
+  }
+}

@@ -1,0 +1,247 @@
+{
+ "version": "validation_selected_v1",
+ "timestamp": "2026-10-29T21:59:56",
+ "software": {
+  "torch": "2.12.0",
+  "torchvision": "0.27.0",
+  "device": "mps"
+ },
+ "seed": 42,
+ "split_sizes": [
+  2416,
+  511,
+  529
+ ],
+ "selection": {
+  "densenet121": {
+   "val_macro_auc": 0.9122365378892511,
+   "test_macro_auc": 0.9272373391906563,
+   "val_in_summary": 0.9122,
+   "test_in_summary": 0.9272
+  },
+  "efficientnet_v2_s": {
+   "val_macro_auc": 0.9095314447376126,
+   "test_macro_auc": 0.9306640958755746,
+   "val_in_summary": 0.9095,
+   "test_in_summary": 0.9307
+  },
+  "resnet50": {
+   "val_macro_auc": 0.9082632416991887,
+   "test_macro_auc": 0.9087822645745914,
+   "val_in_summary": 0.9083,
+   "test_in_summary": 0.9088
+  }
+ },
+ "selected_network": "densenet121",
+ "fig2": {
+  "network": "densenet121",
+  "test_macro_auc": 0.9272373391906563,
+  "test_per_condition_auc": {
+   "Impacted": 0.9944396716303934,
+   "Caries": 0.9192553191489362,
+   "Periapical Lesion": 0.9611111111111111,
+   "Deep Caries": 0.8341432548721843
+  },
+  "test_ece": {
+   "Impacted": 0.020133583239563137,
+   "Caries": 0.09354383036818195,
+   "Periapical Lesion": 0.03955997805514272,
+   "Deep Caries": 0.07872760114180793
+  }
+ },
+ "table2": {
+  "plain": {
+   "val_macro_auc": 0.9111541273702584,
+   "test_macro_auc": 0.9262318061219611,
+   "test_per_condition_auc": {
+    "Impacted": 0.9945709240168004,
+    "Caries": 0.9163905775075989,
+    "Periapical Lesion": 0.9617460317460318,
+    "Deep Caries": 0.8322196912174132
+   }
+  },
+  "independent": {
+   "val_macro_auc": 0.909549829802744,
+   "test_macro_auc": 0.9254452875973674,
+   "test_per_condition_auc": {
+    "Impacted": 0.9942368270332188,
+    "Caries": 0.9158738601823708,
+    "Periapical Lesion": 0.9566666666666667,
+    "Deep Caries": 0.8350037965072133
+   }
+  },
+  "gated_mlp": {
+   "val_macro_auc": 0.911097670506758,
+   "test_macro_auc": 0.9259421387520422,
+   "test_per_condition_auc": {
+    "Impacted": 0.9944158075601375,
+    "Caries": 0.9154255319148936,
+    "Periapical Lesion": 0.9643650793650793,
+    "Deep Caries": 0.8295621361680587
+   }
+  }
+ },
+ "sec37": {
+  "network": "densenet121",
+  "feature_dim": 1024,
+  "temperature": 4.134233474731445,
+  "base_macro_auc": 0.9194757316349104,
+  "env_macro_auc": 0.920102254683425,
+  "base_macro_ece": 0.040417229476787976,
+  "env_macro_ece": 0.054683932812271775,
+  "max_logit_dev": 1.5000004768371582
+ },
+ "fig6": {
+  "raw": [
+   {
+    "tooth": 104,
+    "top": "Caries",
+    "prob": 0.9958747029304504,
+    "shown": true
+   },
+   {
+    "tooth": 105,
+    "top": "Impacted",
+    "prob": 0.9965234398841858,
+    "shown": true
+   },
+   {
+    "tooth": 106,
+    "top": "Caries",
+    "prob": 0.9973406195640564,
+    "shown": true
+   },
+   {
+    "tooth": 107,
+    "top": "Impacted",
+    "prob": 0.9993020296096802,
+    "shown": true
+   },
+   {
+    "tooth": 108,
+    "top": "Deep Caries",
+    "prob": 0.9986557960510254,
+    "shown": true
+   },
+   {
+    "tooth": 109,
+    "top": "Impacted",
+    "prob": 0.9963347911834717,
+    "shown": true
+   },
+   {
+    "tooth": 110,
+    "top": "Deep Caries",
+    "prob": 0.998879611492157,
+    "shown": true
+   },
+   {
+    "tooth": 111,
+    "top": "Deep Caries",
+    "prob": 0.9998509883880615,
+    "shown": true
+   },
+   {
+    "tooth": 112,
+    "top": "Impacted",
+    "prob": 0.9989011287689209,
+    "shown": true
+   },
+   {
+    "tooth": 113,
+    "top": "Deep Caries",
+    "prob": 0.9987168312072754,
+    "shown": true
+   }
+  ],
+  "enveloped": [
+   {
+    "tooth": 104,
+    "deferred": false,
+    "distance": 426.28191134738825,
+    "top": "Caries",
+    "prob": 0.9956761002540588,
+    "shown": true
+   },
+   {
+    "tooth": 105,
+    "deferred": false,
+    "distance": 511.7375225317977,
+    "top": "Impacted",
+    "prob": 0.9957056641578674,
+    "shown": true
+   },
+   {
+    "tooth": 106,
+    "deferred": false,
+    "distance": 409.31709258041246,
+    "top": "Caries",
+    "prob": 0.9957798719406128,
+    "shown": true
+   },
+   {
+    "tooth": 107,
+    "deferred": false,
+    "distance": 569.7793702635918,
+    "top": "Impacted",
+    "prob": 0.998975396156311,
+    "shown": true
+   },
+   {
+    "tooth": 108,
+    "deferred": false,
+    "distance": 549.9023238437941,
+    "top": "Deep Caries",
+    "prob": 0.9981533885002136,
+    "shown": true
+   },
+   {
+    "tooth": 109,
+    "deferred": false,
+    "distance": 466.03741606944715,
+    "top": "Impacted",
+    "prob": 0.9962767958641052,
+    "shown": true
+   },
+   {
+    "tooth": 110,
+    "deferred": false,
+    "distance": 563.1506444108843,
+    "top": "Deep Caries",
+    "prob": 0.9972019195556641,
+    "shown": true
+   },
+   {
+    "tooth": 111,
+    "deferred": false,
+    "distance": 776.8749867932346,
+    "top": "Deep Caries",
+    "prob": 0.9996633529663086,
+    "shown": true
+   },
+   {
+    "tooth": 112,
+    "deferred": false,
+    "distance": 455.2379487349383,
+    "top": "Impacted",
+    "prob": 0.9986590147018433,
+    "shown": true
+   },
+   {
+    "tooth": 113,
+    "deferred": false,
+    "distance": 635.2164022469972,
+    "top": "Deep Caries",
+    "prob": 0.9957041144371033,
+    "shown": true
+   }
+  ],
+  "ood_threshold": 855.1716112841227
+ },
+ "files": [
+  "d1_reliability_densenet121_seed42_valselected.png",
+  "train_564_densenet121_RAW.png",
+  "train_564_densenet121_ENVELOPED.png",
+  "fig6_train_564_densenet121.png"
+ ]
+}
